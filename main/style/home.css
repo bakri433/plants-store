@@ -1,0 +1,286 @@
+:root{
+    --main-green:#2d4a3e;
+    --bg-beige:#f7f4eb;
+    --text-dark:#222222;
+    --accent-gold:#c2a383;
+    --white-text:#ffffff;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+      font-family: "Cairo", sans-serif;
+width: 100%;;
+justify-content: center;
+overflow-x: hidden;
+
+}
+.hero{
+    width: 100%;
+    min-height: fit-content;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+.head{
+    width: 100%;
+    height: 100vh;
+background: linear-gradient(to left, #2d4a3edb 18%, transparent 43%), url(/images/landing.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+/*.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #0000004d;
+   background-color: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));
+  position: absolute;
+    z-index: 2;
+    left: 0;
+    top:0;
+    padding: 0 20px 0 20px;
+}*/
+/*header*/
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 100;
+   /* backdrop-filter: blur(8px);*/
+    background: var(--main-green);
+}
+.header .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    width: 130px;
+    height: 130px;
+}
+.header .brandname{
+    line-height: 1.5;
+    font-size: 17px;
+    color: var(--white-text);
+}
+.header .brandname .name{
+    font-family: "Playwrite GB J", cursive;
+
+ color: var(--accent-gold);
+}
+.header .brandname .store{
+    font-weight: 200;
+}
+.header ul{
+list-style: none;
+display: flex;
+margin: 0 30px 0 0;
+
+}
+.header ul li{
+    width: 130px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.header ul li .arrow{
+width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header ul li .arrow:hover i{
+transform: rotate(180deg);
+color: rgb(204, 28, 28);
+
+}
+.header ul li a{
+    letter-spacing: 2;
+
+    text-align: center;
+text-decoration: none;
+font-size: 20px;
+position: relative;
+transition: 0.3s;
+color: var(--white-text);
+}
+.header ul li a:hover{
+color: rgb(204, 28, 28);
+}
+/*.header ul a:hover::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    transition: 0.3s;
+    left: 10px;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+}*/
+
+/*landpage*/
+.head .land{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    line-height: 4;
+    color: var(--white-text);
+    padding: 0 50px;
+}
+.head .land h2{
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.5;
+    margin: 0 10px 0 0;
+}
+.head .land .corner{
+    font-size: 50px;
+       
+    margin: 0 10px 0 0;
+
+}
+.head .land p{
+                font-size: 24px;
+                margin: 30px 10px 0 0 ;
+
+    font-weight: 900;
+}
+.head .land button{
+  /*      width: 110px;
+    height: 50px;*/
+  background: var(--white-text);
+    color: var(--text-dark);
+    /* border: 4px solid white; */
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bolder;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(255 255 255 / 86%);
+    margin: 10px 10px 0 0;
+    padding: 14px 45px;
+    border: 2px solid #c0c0c0;
+}
+.head .land button:hover{
+    background-color: var(--accent-gold);
+
+}
+/*about-us*/
+
+.aboutus{
+    width: 100%;
+    height:120vh ;
+    background: url("/images/aboutbg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    line-height: 3;
+
+}
+.aboutus .about-header{
+        width: 100%;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+}
+/*.aboutus .about-header .leaf{
+        width: 80px;
+    height: 100px;
+    position: absolute;
+}*/
+.aboutus .about-header h2{
+color: #000;
+    font-size: 45px;
+    position: absolute;
+  /*  top: 75px;*/
+    line-height: 2;
+    letter-spacing: 10px;
+    margin: 20px 0 0 0;
+}
+.aboutus .about-header h2::after{
+    background: green;
+    content: "";
+    display: block;
+    width: 230px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 105px;
+}
+.aboutus .about-header p{
+color: #000;
+font-size: 23px;
+position: absolute;
+top: 165px;
+}
+.aboutus .card{
+width: 900px;
+height: 65vh;
+border-radius: 15px;
+box-shadow: 0 0 10px gray;
+display: flex;
+
+}
+.aboutus .card .left{
+        width: 450px;
+    height: 100%;
+    position: relative;
+    background: url("/images/FullSizeRender5D.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.aboutus .card .right{
+width: 450px;
+height: 100%;
+}
+.aboutus .card .left .info{
+width: 100px;
+    height: 150px;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 18px;
+    background: rgba(31, 58, 38, 0.85);
+}
+.aboutus .card .left .info i{
+    
+}
