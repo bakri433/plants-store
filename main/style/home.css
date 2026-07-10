@@ -282,5 +282,5 @@ width: 100px;
     background: rgba(31, 58, 38, 0.85);
 }
 .aboutus .card .left .info i{
-    
+    color: var(--bg-beige);
 }
