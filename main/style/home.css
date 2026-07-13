@@ -107,11 +107,36 @@ width: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: var(--white-text);
 }
 .header ul li .arrow:hover i{
-transform: rotate(180deg);
+
 color: rgb(204, 28, 28);
 
+}
+.header ul li .arrow span{
+     letter-spacing: 2;
+
+    text-align: center;
+text-decoration: none;
+font-size: 20px;
+position: relative;
+transition: 0.3s;
+color: var(--white-text);
+cursor: pointer;
+}
+.header ul li .arrow span:hover{
+    color: rgb(204, 28, 28);
+}
+.header ul li .arrow .classlist{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background: #c5aeae;
+    top: 101px;
+    right: 32%;
+    transition: 0.3s all;
+    display: block !important;
 }
 .header ul li a{
     letter-spacing: 2;
