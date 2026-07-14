@@ -24,6 +24,14 @@ let arrow= document.getElementById("arrow");
 
 //});
 classifications.addEventListener("click",()=>{
-    arrow.style.transform="rotateX(180deg)"
+   // arrow.style.transform="rotateX(180deg)"
+    
     classlist.classList.toggle("classlist");
-})
+        arrow.classList.add("red");
+if(classlist.classList.contains("classlist")){
+    arrow.style.transform="rotateX(180deg)"
+}else{
+  arrow.style.transform="rotateX(0deg)"
+  arrow.classList.remove("red");
+}
+});

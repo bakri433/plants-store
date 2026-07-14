@@ -129,14 +129,20 @@ cursor: pointer;
     color: rgb(204, 28, 28);
 }
 .header ul li .arrow .classlist{
-    position: absolute;
-    width: 300px;
+     position: absolute;
+    width: 173px;
     height: 500px;
-    background: #c5aeae;
+background: #2c6666;
     top: 101px;
-    right: 32%;
+    right: 22%;
     transition: 0.3s all;
     display: block !important;
+}
+#arrow.red{
+      color: rgb(204, 28, 28);
+}
+#arrow:hover{
+  
 }
 .header ul li a{
     letter-spacing: 2;
